@@ -15,12 +15,9 @@ export const signup = async (req, res) => {
 		if (user) {
 			return res.status(400).json({ error: "Username already exists" });
 		}
-
-		// HASH PASSWORD HERE
 		const salt = await bcrypt.genSalt(10);
 		const hashedPassword = await bcrypt.hash(password, salt);
-    console.log("Hashed")
-		// https://avatar-placeholder.iran.liara.run/
+    		console.log("Hashed")
 
 		const boyProfilePic = `https://avatar.iran.liara.run/public/boy?username=${username}`;
 		const girlProfilePic = `https://avatar.iran.liara.run/public/girl?username=${username}`;
@@ -32,9 +29,8 @@ export const signup = async (req, res) => {
 			gender,
 			profilePic: gender === "male" ? boyProfilePic : girlProfilePic,
 		});
-    console.log("User Created")
+    		console.log("User Created")
 		if (newUser) {
-			// Generate JWT token here
 			generateTokenAndSetCookie(newUser._id, res);
 			await newUser.save();
 
