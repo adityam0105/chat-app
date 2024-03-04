@@ -4,9 +4,9 @@ A standard MERN Stack Chat App
 
 ## Tech Stack
 
-- React
+- React.js
 - Node.js
-- Express
+- Express.js
 - MongoDB
 - JavaScript
 - Tailwind CSS
