@@ -53,6 +53,4 @@ If you'd like to contribute to this project, please follow these guidelines:
 
 If you want to connect , feel free to contact Me:
 
-- [Aditya Mukheji](adityamukherji405@gmail.com)
-
-
+- - [Aditya Mukherji](mailto:adityamukherji405@gmail.com)
