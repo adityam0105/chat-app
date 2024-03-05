@@ -23,7 +23,7 @@ The application uses consistent routing and authentication with distinct Webpage
 
 1. Clone the repository.
 2. Navigate to the project directory.
-3. Install dependencies using `npm innstall`.
+3. Install dependencies using `npm install`.
 4. Run the froentend server using `npm run dev`.
 5. Run the backend server using `npm run server`.
 6. Create a global .env file containing the MONGO_DB_URI, PORT and the JWT_SECRET
